@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/6115d7769f.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+    /* Desktop */
+    @media screen and ( min-width: 960px ) {
+      body {
+        font-family: 'Roboto', sans-serif;
+      }
+      p {
+        margin:0;
+      }
+      .logo img {
+        height: 22px;
+        padding-bottom: 0;
+      }
+      .highlight {
+        color: #EDB236;
+      }
+      .headline {
+        color: #292929;
+        font-size: 50px;
+        line-height: 1.1;
+        margin-bottom: 0;
+      }
+      .feature {
+        padding-top: 30px;
+      }
+      .reciept_table {
+        border-top: 4px solid black;
+        margin-top: 30px;
+        background-color: #F5F5F5;
+      }
+      .reciept_table h2 {
+        font-weight: 400;
+        padding-top: 15px;
+        margin-bottom: 0;
+        color: #363535;
+      }
+      .recipet_details p {
+        color: #808080;
+        margin-top: 0;
+        padding-top: 10px;
+        padding-bottom: 18px;
+      }
+      .fas {
+        color: #808080;
+        height: 16px;
+        width: 16px;
+        vertical-align: middle;
+        padding-right: 10px;
+      }
+      .details_title {
+        color: #4b4a4a;
+        display: inline;
+        font-size: 20px;
+      }
+      .reciept_cell {
+        padding: 5px 0;
+      }
+      .details {
+        float: right;
+        font-size: 18px;
+        color: #4b4b4a;
+        line-height: 1.5;
+      }
+      .final_cell {
+        border-bottom: 1px solid black;
+        padding-bottom: 20px;
+        padding-top: 20px
+      }
+      .redeem {
+        padding-bottom: 10px;
+        max-width: 100%;
+        min-width: 100%;
+      }
+      .redeem h2 {
+        color: #292929;
+        font-weight: 500;
+        padding-bottom: 15px;
+      }
+      .redeem p {
+        font-size: 20px;
+        line-height: 1.5;
+      }
+      .button_cell {
+        padding-top: 30px;
+      }
+      .button {
+        color: #fff;
+        background: #cc4b06;
+        background-color: #cc4b06;
+        font-size: 16px;
+        padding: 20px 30px 20px 30px;
+        border-radius: 3px;
+        width: 230px;
+        border: none;
+      }
+      .learn_more_cell p {
+        padding-top: 30px;
+        color: #4b4b4b;
+        font-size: 20px;
+      }
+      .learn_more_cell a {
+        text-decoration: underline;
+        color: #181818;
+      }
+      .terms {
+        padding-top: 30px;
+      }
+      .terms p,
+      .terms p a {
+        color: #4b4b4b;
+        font-size: 12px;
+        margin: 0;
+        padding-bottom: 15px;
+      }
+    }
+    /* Mid-sizes */
+    @media screen and ( max-width: 960px ) {
+      body {
+        font-family: 'Roboto', sans-serif;
+      }
+      p {
+        margin:0;
+      }
+      .logo img {
+        height: 22px;
+        padding-bottom: 0;
+      }
+      .highlight {
+        color: #EDB236;
+      }
+      .headline {
+        color: #292929;
+        font-size: 50px;
+        line-height: 1.1;
+        margin-bottom: 0;
+      }
+      .feature {
+        padding-top: 30px;
+      }
+      .reciept_table {
+        border-top: 4px solid black;
+        margin-top: 30px;
+        background-color: #F5F5F5;
+      }
+      .reciept_table h2 {
+        font-weight: 400;
+        padding-top: 15px;
+        margin-bottom: 0;
+        color: #363535;
+      }
+      .recipet_details p {
+        color: #808080;
+        margin-top: 0;
+        padding-top: 10px;
+        padding-bottom: 18px;
+      }
+      .fas {
+        color: #808080;
+        height: 16px;
+        width: 16px;
+        vertical-align: middle;
+        padding-right: 10px;
+      }
+      .details_title {
+        color: #4b4a4a;
+        display: inline;
+        font-size: 20px;
+      }
+      .reciept_cell {
+        padding: 5px 0;
+      }
+      .details {
+        float: right;
+        font-size: 18px;
+        color: #4b4b4a;
+        line-height: 1.5;
+      }
+      .final_cell {
+        border-bottom: 1px solid black;
+        padding-bottom: 20px;
+        padding-top: 20px
+      }
+      .redeem {
+        padding-bottom: 10px;
+        max-width: 100%;
+        min-width: 100%;
+      }
+      .redeem h2 {
+        color: #292929;
+        font-weight: 500;
+        padding-bottom: 15px;
+      }
+      .redeem p {
+        font-size: 20px;
+        line-height: 1.5;
+      }
+      .button_cell {
+        padding-top: 30px;
+      }
+      .button {
+        color: #fff;
+        background: #cc4b06;
+        background-color: #cc4b06;
+        font-size: 16px;
+        padding: 20px 30px 20px 30px;
+        border-radius: 3px;
+        width: 230px;
+        border: none;
+      }
+      .learn_more_cell p {
+        padding-top: 30px;
+        color: #4b4b4b;
+        font-size: 20px;
+      }
+      .learn_more_cell a {
+        text-decoration: underline;
+        color: #181818;
+      }
+      .terms {
+        padding-top: 30px;
+      }
+      .terms p,
+      .terms p a {
+        color: #4b4b4b;
+        font-size: 12px;
+        margin: 0;
+        padding-bottom: 15px;
+      }
+    }
+    /* Mobile */
+    @media screen and ( max-width: 600px ) {
+      
+    }
+    /* table {
+      border: 1px solid blue;
+    }
+    .column {
+      border: 1px solid red;
+    } */
+    
+  </style>
+</head>
+<body>
+  <!-- main-table -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td>
+        <!-- container-table -->
+        <table align="center" border="0" cellpadding="0" cellspacing="0" class="container" width="600" style="margin-bottom: 20px;">
+          <tr>
+            <td>
+              <!-- Start of content -->
+                <table class="main-content">
+                  <tr>
+                    <td class="column logo">
+                      <img src="img/honey_logo.png" alt="">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class=column>
+                      <h1 class="headline">Your <span class="highlight">319 Honey Gold<br/></span> from <span style="color:#292929;text-decoration: none;">Booking&#173;.com</span> is on the way!</h1>
+                    </td>
+                  </tr>
+                  <!-- end header table -->
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+                    <tr>
+                      <td class="column">
+                        <img src="https://i.postimg.cc/yxS7N1yJ/featuredimage.png" alt="" width="100%" class="feature">
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- end featured image table -->
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="98%" class="reciept_table">
+                    <tr>
+                      <td>
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="90%" class="recipet_details">
+                          <tr>
+                            <td class="column">
+                              <h2 style="text-decoration: none;">Your Recent Purchase at Booking&#173;.com</h2>
+                              <p>Honey Gold is redeemable typically <span style="color: #000;">withing 60-90 days</span> of your purchase.</p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td> 
+                    </tr>
+                    <!-- end reciept header row-->
+                    <tr>
+                      <td class="column">
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="90%" style="padding-top: 30px; border-top: 1px solid #000;">
+                          <tr>
+                            <td class="column reciept_cell">
+                              <i class="fas fa-shopping-basket"></i>
+                              <p class="details_title">Order Total:</p>
+                            </td>
+                            <td class="reciept_cell">
+                              <p class="details">$159.99</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="reciept_cell">
+                              <i class="fas fa-gift"></i>
+                              <p class="details_title">Rewards Rate:</p>
+                            </td>
+                            <td class="reciept_cell">
+                              <p class="details">2.00%</p>
+                            </td>
+                          </tr>
+                          <tr class="final_row">
+                            <td class="column reciept_cell final_cell" style="padding-top: 0;">
+                              <i class="fas fa-calendar-check"></i>
+                               <p class="column details_title">Order Date:</p>
+                            </td>
+
+                            <td class="column reciept_cell final_cell" style="padding-top: 0; width: 120px;">
+                              <p class="column details">Mar 10 2021</p>
+                            </td>
+                          </tr> 
+                          <tr>
+                            <td class="reciept_cell final_cell">
+                              <p class="details_title">Honey Gold Pending:</p>
+                            </td>
+                            <td class=" column reciept_cell final_cell">
+                              <p class="column details" style="color:#292929; font-weight: 500; width: 205px;">+319 Gold ($3.19 USD)</p>
+                            </td>
+                          </tr>
+                          <!-- end redeem section -->
+                        </table>
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="90%" class="recipet_details">
+                          <tr>
+                            <td class="column redeem" style="max-width : 100%; min-width: 100%; ">
+                              <h2>When can I redeem my Honey Gold?</h2>
+                              <p>Honey Gold is usually confirmed within 60-90 days of your transaction. Your Honey Gold remains pending until the merchant confirms your purchase. This gives you time to resolve any issues with your order, like returns or exchanges. It also gives us time to polish your Gold so it’s nice and shiny by the time we send it your way.</p>
+                              <p>Once you have 1,000 Gold, you can redeem it for a $10 gift card from your favorite store.</p>
+                            </td>
+                          </tr>
+                        </table>
+                        <!-- end reciept details section -->
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="90%">
+                          <tr>
+                            <td class="button_cell">
+                              <button class="button">Check Your Gold Status</button>
+                            </td>
+                          </tr>
+                        </table>
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="90%">
+                          <tr>
+                            <td class="learn_more_cell">
+                              <p><a href="#">Learn more</a> about the Honey Gold rewards program.</p>
+                            </td>
+                          </tr>
+                        </table>
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="90%">
+                          <tr>
+                            <td class="terms">
+                              <p>Terms apply, see <a href="#">joinhoney.com/terms</a></p>
+
+                              <p>You are receiving this message based on your Honey account seetings.<br/>
+                              <a href="#">Unsubscribe</a> or adjust <a href="#">email preferences.</a></p>
+
+                              <p>Copyright &copy; 2020 Honey Science LLC (a PayPal company)<br/>
+                              All rights reserved. 963 E. 4th Street, Los Angeles, CA 90013</p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
